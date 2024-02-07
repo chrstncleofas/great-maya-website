@@ -142,6 +142,7 @@ body {
 .features .secondSection img{
     width: 100%;
     height: 57%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .features .firstSection h5,
@@ -155,4 +156,24 @@ body {
 .features .secondSection p{
     color: #414141;
     margin: 0;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 950px;
+    margin: auto;
+}
+
+.projects h5{
+    font-size: 45px;
+    text-align: center;
+    color: #414141;
+}
+
+.projects img{
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
