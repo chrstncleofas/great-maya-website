@@ -29,7 +29,7 @@ body {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    font-weight: 600;
+    font-weight: 700;
 }
 .nav li a:hover {
     background-color: #0E591A;
@@ -124,7 +124,7 @@ body {
 .features{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    max-width: 880px;
+    max-width: 1160px;
     margin: auto;
     margin-top: 85px;
     grid-gap: 70px;
@@ -163,7 +163,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 160px 1fr;
-    max-width: 950px;
+    max-width: 1160px;
     margin: auto;
     margin-bottom: 40px;
     margin-top: -30px;
@@ -179,6 +179,10 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.carousel-item{
+    transition: transform 0.1s ease;
 }
 
 .carousel-inner img {
