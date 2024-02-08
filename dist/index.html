@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -51,7 +53,7 @@
     </section>
     <!-- Features -->
     <section class="features">
-        <div class="firstSection">
+        <div class="firstSection" data-aos="fade-left">
             <div>
                 <h5>First Features</h5>
                 <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -60,7 +62,7 @@
                 <img src="img/FirstFeautureImg.png" alt="">
             </div>
         </div>
-        <div class="secondSection">
+        <div class="secondSection" data-aos="fade-right">
             <div class="leftImage">
                 <img src="img/SecondFeatureImg.png" alt="">
             </div>
@@ -94,7 +96,29 @@
     </section>
     <!-- Mission -->
     <section class="mission">
-
+        <div class="mission-container">
+            <div class="mission-slider-inner">
+                <div class="mission-slider-item active">
+                    <h4>Mission</h4>
+                    <p>To bring house and lots packages closer and accessible to more Filipinos, with our
+                        modern design and affordable financing packages
+                    </p>
+                </div>
+                <div class="mission-slider-item">
+                    <h4>Vision</h4>
+                    <p>To bring house and lots packages closer and accessible to more Filipinos, with our
+                        modern design and affordable financing packages
+                    </p>
+                </div>
+                <div class="mission-slider-indicators">
+                    <span class="mission-indicator active" onclick="goToMissionSlide(0)"></span>
+                    <span class="mission-indicator" onclick="goToMissionSlide(1)"></span>
+                </div>
+            </div>
+            <div class="mission-img">
+                <img src="img/Property-Specialist-Image.png" alt="Property Specialist">
+            </div>
+        </div>
     </section>
     <!-- Contact -->
     <section class="contact"></section>
@@ -104,5 +128,15 @@
     <!-- Javascript -->
     <!-- Scripts -->
     <script src="js/main.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+        offset: 300,
+        duration: 1000
+        });
+    </script>
 </body>
 </html>
