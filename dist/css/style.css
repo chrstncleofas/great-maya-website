@@ -610,6 +610,14 @@ body {
     height: 250px;
 }
 
+.footer .greatMayaLogoSection p{
+    line-height: 2;
+    letter-spacing: 2.2px;
+    font-weight: 500;
+    justify-self: center;
+    align-self: center;
+}
+
 .footer__container {
     row-gap: 1.1rem;
 }
