@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="css/aos.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SOCIAL MEDIA ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- ICONS FOR BUTTON -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
     <link 
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
@@ -62,6 +66,10 @@
     </section>
     <!-- Features -->
     <section class="features">
+        <div class="titleDes">
+            <h4>Featured Listing</h4>
+            <p>Donec ullamcorper nulla non metus auctor fringilla</p>
+        </div>
         <div class="firstSection" data-aos="fade-left">
             <div>
                 <h5>First Features</h5>
@@ -82,26 +90,46 @@
         </div>
     </section>
     <!-- Project -->
-    <section class="projects">
-        <h5>PROJECTS</h5>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/ProjectImage.png" alt="">
+    <div class="section-title" style="margin-top: 30px;">
+        <h4>Our Project</h4>
+        <p>Donec ullamcorper nulla non metus auctor fringilla</p>
+    </div>
+    <section id="section-b" class="project-grid">
+        <ul>
+            <li>
+                <div class="card">
+                    <img src="img/ProjectImage.png" alt=""> 
+                    <div class="card-content">
+                        <h3 class="card-title">Project 1</h3>
+                        <!-- p lorem 21 -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptate fugiat odit exercitationem veritatis. Esse aut excepturi quidem quasi dolor.</p>
+                        <a href="#" style="color: #147223; float: right; padding-bottom: 20px;">Learn More</a>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/FirstFeautureImg.png" alt="">
-                </div>
-                <div class="carousel-item">
+            </li>
+            <li>
+                <div class="card">
                     <img src="img/SecondFeatureImg.png" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Project 2</h3>
+                        <!-- p Lorem 20 -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptate fugiat odit exercitationem veritatis. Esse aut excepturi quidem quasi dolor.</p>
+                        <a href="#" style="color: #147223; float: right; padding-bottom: 20px;">Learn More</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="slider-indicators">
-            <span class="indicator active" onclick="goToSlide(0)"></span>
-            <span class="indicator" onclick="goToSlide(1)"></span>
-            <span class="indicator" onclick="goToSlide(2)"></span>
-        </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="img/FirstFeautureImg.png" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Project 3</h3>
+                        <!-- p lorem 20 -->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias voluptate fugiat odit exercitationem veritatis. Esse aut excepturi quidem quasi dolor.</p>
+                        <a href="#" style="color: #147223; float: right; padding-bottom: 20px;">Learn More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
     <!-- Mission -->
     <section class="mission">
@@ -130,9 +158,102 @@
         </div>
     </section>
     <!-- Contact -->
-    <section class="contact"></section>
+    <!-- Contact Form -->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Us</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <!--  -->
+        <div class="contact__container container grid">
+            <!--  -->
+            <div>
+                <!--  -->
+                <div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Telephone</h3>
+                        <span class="contact__subtitle">(043) 757-4674</span>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <span class="contact__subtitle">greatmayalandsinc27@gmail.com</span>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Unit 1, 2nd flr, RCM Building, Poblacion, San Juan Batangas</span>
+                    </div>
+                </div>
+            </div>
+            <form name="contact" method="POST" data-netlify="true" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label class="contact__label">Name</label>
+                        <input type="text" name="name" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label class="contact__label">Email</label>
+                        <input type="email" name="email" class="contact__input">
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <label class="contact__label">Project</label>
+                    <input type="text" name="project" class="contact__input">
+                </div>
+                <div class="contact__content">
+                    <label class="contact__label">Message</label>
+                    <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="button button--flex">Send Message <i
+                            class="uil uil-message button__icon"></i></button>
+                    <!-- <a type="submit" class="button button--flex">Send Message<i
+                            class="uil uil-message button__icon"></i></a> -->
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <!-- footer -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">ChrstnDev</h1>
+          <span class="footer__subtitle">Junior Backend Developer</span>
+        </div>
+        <ul class="footer__links">
+          <li>
+            <a href="#services" class="footer__link">Project</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">About Us</a>
+          </li>
+          <li>
+            <a href="contact.html" class="footer__link">Join Us</a>
+          </li>
+        </ul>
+        <div class="footer__socials">
+          <!-- Facebook Icon -->
+          <a href="https://facebook.com/chrstncleofas27" target="_blank" class="footer__social"><i
+              class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <!-- Github -->
+          <a href="https://github.com/chrstncleofas" target="_blank" class="footer__social"><i
+              class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+          <!-- Linkedin -->
+          <a href="https://www.linkedin.com/in/christiancleofas/" target="_blank" class="footer__social"><i
+              class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; 2023 GREAT MAYA PRIME RESORT DEVELOPMENT & GREAT MAYA LANDS INC. All right reserved</p>
+    </div>
+  </footer>
 
     <!-- Javascript -->
     <!-- Scripts -->
