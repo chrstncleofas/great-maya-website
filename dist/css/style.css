@@ -604,6 +604,12 @@ body {
     margin-top: 35px;
 }
 
+.footer .greatMayaLogoSection img{
+    width: 95%;
+    margin-top: -40px;
+    height: 250px;
+}
+
 .footer__container {
     row-gap: 1.1rem;
 }
@@ -632,6 +638,10 @@ body {
 .footer__links li{
     padding: 0;
     margin: 0;
+}
+
+.footer__links li a{
+    font-weight: 700;
 }
 
 .quickLinks h4{
