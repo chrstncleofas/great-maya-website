@@ -57,6 +57,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* ============================================= Buttons =============================================================== */
 
 .btn {
@@ -253,7 +255,7 @@ body {
 .nav li a:hover {
     background-color: #0E591A;
     color: #fff;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .showcase {
@@ -346,11 +348,13 @@ body {
 
 .features{
     display: grid;
-    grid-template-rows: 90px 1fr 1fr;
-    max-width: 1160px;
+    grid-template-rows: 90px 1fr 20px 1fr;
+    max-width: 1400px;
     margin: auto;
-    margin-top: 85px;
+    margin-top: 25px;
     grid-gap: 70px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .features .firstSection,
@@ -362,11 +366,17 @@ body {
     justify-content: center;
 }
 
+.features .secondSection .leftImage{
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
 .features .firstSection img,
 .features .secondSection img{
-    width: 93%;
+    display: block;
+    margin: 0 auto;
+    width: 55%;
     height: 290px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .features .titleDes h4{
@@ -378,12 +388,15 @@ body {
     margin: 0;
 }
 
+.features .contentOfAbout{
+    text-align: justify;
+}
+
 .features .titleDes p{
-    color: #414141;
     font-size: 20px;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
+    color: #414141;
+    display: inline-block;
+    width: 100%;
     margin: 30px;
 }
 
@@ -408,9 +421,11 @@ body {
 
 #section-b img{
     display: block;
-    width: 100%;
+    width: 470px;
     height: 340px;
     border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .section-title h4{
@@ -482,6 +497,54 @@ body {
         width: 28%;
     }
  }
+
+.coreValue {
+    border-top: 0.65px solid rgb(154, 154, 154);
+    border-bottom: 0.65px solid rgb(154, 154, 154);
+    padding: 20px 0;
+}
+
+.container-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.core-icons {
+    padding: 50px;
+    text-align: center;
+}
+
+.core-icons h6{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #414141;
+}
+
+.core-icons p{
+    margin: 0;
+    padding: 0;
+    color: #414141;
+}
+
+.icon-circle-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #DDF1F0;
+    border-radius: 50%;
+    border: none;
+    margin: 0 auto;
+}
+
+.core-icons img {
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+}
 
 .mission{
     border: 0.50px solid rgba(122, 122, 122, 0.3);
