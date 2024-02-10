@@ -5,7 +5,7 @@
     --primary-color: #0E591A;
     --secondary-color: #116f21;
     --overlay-color: rgba(0, 0, 0, 0.7);
-    --shadow: 0 1px 10px #9e9e9e;
+    --shadow: 0 1px 10px #d6d6d6;
 
     /* Colors */
     --hue-color: 250;
@@ -347,8 +347,6 @@ body {
 /* Features Section */
 
 .features{
-    display: grid;
-    grid-template-rows: 90px 1fr 20px 1fr;
     max-width: 1400px;
     margin: auto;
     margin-top: 25px;
@@ -359,16 +357,19 @@ body {
 
 .features .firstSection,
 .secondSection{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--shadow);
 }
 
-.features .secondSection .leftImage{
+.features .secondSection h5{
     text-align: center;
-    box-shadow: var(--shadow);
+}
+
+.features .secondSection p{
+    line-height: 2;
+    letter-spacing: 1.15;
+    text-align: justify;
 }
 
 .features .firstSection img,
