@@ -766,6 +766,45 @@ body {
 .footer__social {
     color: #414141;
 }
+
+/* Join Us */
+
+.joinUsShowcase{
+    margin-top: 100px;
+}
+
+.joinUsShowcase-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1230px;
+    margin: auto;
+}
+
+.joinUsShowcase-container .joinUsShowcase-content h5{
+    font-size: 48px;
+    font-weight: 700;
+    color: #414141;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.joinUsShowcase-container .joinUsShowcase-content .border-down{
+    width: 530px;
+    height: 3px;
+    background-color: #414141;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.joinUsShowcase-container .joinUsShowcase-content p{
+    color: #414141;
+    text-align: justify;
+}
+  
+.joinUsShowcase-container .leftImage img{
+    width: 100%;
+    margin-left: 20px;
+}
   
 
 /* Large Size */
